@@ -1,0 +1,108 @@
+:root {
+  --langFont: "Poppins", sans-serif;
+}
+
+#en, .cont .info:last-of-type {
+  font-family: var(--langFont);
+}
+
+#ar {
+  font-family: "Tajawal", sans-serif;
+}
+
+body {
+  font-family: "Tajawal", sans-serif;
+  text-align: right;
+}
+body .sec {
+  font-family: "Tajawal", sans-serif;
+}
+
+a.btn {
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  a.btn {
+    font-size: 14px;
+  }
+}
+
+.with-line {
+  flex-direction: row-reverse;
+}
+
+.settings .list .choose {
+  flex-direction: row-reverse;
+  margin-left: 0;
+  margin-right: 0;
+}
+.settings .list .choose .sec {
+  margin-right: 0;
+  margin-left: 5.5px;
+}
+
+section.head .container .middle p {
+  font-size: 16px;
+}
+
+section.first-section .container .badges {
+  flex-direction: row-reverse;
+}
+section.first-section .container .badges .badge {
+  flex-direction: row-reverse;
+}
+section.first-section .container .article h2 {
+  margin: 0 0 50px auto;
+}
+section.first-section .container .article .post {
+  flex-direction: row-reverse;
+}
+section.first-section .container .article .post .right .top p {
+  font-size: 16px;
+}
+
+section.products .container .gallery {
+  flex-direction: row-reverse;
+}
+section.products .container .gallery .product p {
+  padding-right: 0;
+  padding-left: 20px;
+}
+section.products .container .gallery .product .sec {
+  padding-left: 0;
+  padding-right: 30px;
+}
+section.products .container .gallery .product .sec li {
+  padding-right: 0;
+  padding-left: 20px;
+}
+section.products .container .gallery .product .sec li::after {
+  left: unset;
+  right: -30px;
+}
+
+section.contact .container .content .cont .information {
+  flex-direction: row-reverse;
+}
+
+section.footer .container .all {
+  flex-direction: row-reverse;
+}
+section.footer .container .all .icons {
+  justify-content: flex-end;
+}
+section.footer .container .all .one h2 {
+  letter-spacing: 0;
+}
+@media (max-width: 576px) {
+  section.footer .container .all {
+    flex-direction: row;
+  }
+}
+
+.sidebar ul li::before {
+  left: unset;
+  right: 0;
+}
+
+/*# sourceMappingURL=rtl.css.map */
