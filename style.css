@@ -38,17 +38,17 @@ body::-webkit-scrollbar-thumb {
 }
 @media (max-width: 992px) {
   .container {
-    width: 70%;
+    width: 80%;
   }
 }
 @media (max-width: 768px) {
   .container {
-    width: 85%;
+    width: 90%;
   }
 }
 @media (max-width: 576px) {
   .container {
-    width: 95%;
+    width: 98%;
   }
 }
 
@@ -59,7 +59,8 @@ ul {
 a.btn {
   display: block;
   margin: 0 15px;
-  padding: 17px 0;
+  height: 50px;
+  line-height: 50px;
   width: 180px;
   border-radius: 10px;
   letter-spacing: 1px;
@@ -77,14 +78,16 @@ a.btn.seco {
 }
 @media (max-width: 768px) {
   a.btn {
-    padding: 13px 0;
+    height: 40px;
+    line-height: 40px;
     font-size: 12px;
     width: 165px;
   }
 }
 @media (max-width: 576px) {
   a.btn {
-    padding: 10px 0;
+    height: 35px;
+    line-height: 35px;
     width: 130px;
   }
 }
@@ -99,7 +102,7 @@ a.btn.seco {
   width: fit-content;
 }
 .with-line hr {
-  width: 40%;
+  width: 35%;
   height: 1px;
   margin: 13px 0 0;
 }
@@ -234,7 +237,6 @@ section.first-section .badges {
   display: flex;
   margin-bottom: 80px;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 section.first-section .badges .badge {
   display: flex;
@@ -257,6 +259,11 @@ section.first-section .badges .badge .badge_title {
   font-size: 22px;
   align-items: center;
   padding: 0 10px;
+}
+@media (max-width: 992px) {
+  section.first-section .badges {
+    flex-wrap: wrap;
+  }
 }
 section.first-section .with-line.about hr {
   border: 1px solid var(--mainColor);
@@ -395,7 +402,7 @@ section.process .content .with-line {
   color: #e5e5e5;
 }
 section.process .content .with-line hr {
-  width: 32%;
+  width: 25%;
   border: 1px solid #e5e5e5;
   background: #fff;
 }
@@ -1060,6 +1067,16 @@ section.footer .all .one:last-of-type {
   align-items: center;
 }
 
+@media (max-width: 840px) {
+  section.products h2 br {
+    display: none;
+  }
+}
+@media (max-width: 850px) {
+  section.first-section .article h2, section.delivery h2, section.products h2, section.contact .container .content h2 {
+    font-size: 55px;
+  }
+}
 @media (max-width: 768px) {
   br {
     display: none;
@@ -1075,3 +1092,4 @@ section.footer .all .one:last-of-type {
 }
 
 /*# sourceMappingURL=style.css.map */
+
