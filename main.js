@@ -122,6 +122,12 @@ function all() {
     color.oninput = function () {
         localStorage.setItem("favcolor", color.value);
         document.documentElement.style.setProperty("--mainColor", localStorage.getItem("favcolor"));
+        colorsList.forEach(e => {
+            e.classList.remove("active");
+            if (document.documentElement.style.getPropertyValue("--mainColor") == e.dataset.color) {
+                e.classList.add("active");
+            }
+        });
     }
 
     // settings
